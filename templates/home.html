@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+<h1>WORD COUNT</h1>
+
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Count!" />
+    <input type="button" value="About" onclick="location.href='{% url 'about' %}'" />
+</form>
+<br>
+<br>
+
+<a href='{% url 'about' %}'>About</a>
+
+</body>
+</html>
